@@ -3,8 +3,8 @@ class Method_ReturnType
 
 	public static void main(String[] args)
 	{
-		int a=addition();
-		System.out.println("ADDITION IS:"+a);
+		//int a=addition();
+				System.out.println("ADDITION IS:"+addition());
 	
 	}
 
