@@ -1,27 +1,23 @@
+class Central1
+{
+	static int k =20;
+	
+	static
+	{
+	System.out.println("STATIC BLOCK OF BL CLASS");
+	}
+}
+
 class MainClass1
 {
-	static int k =12;
-	double d = 33.66;
-
-	static void test()
-	{
-	System.out.println("TEST METHOD");
-	}
-
-	
-	void display()
-	{
-	System.out.println("DISPLAY METHOD");	
-	}
-
 	public static void main(String[] args)
 	{
-	System.out.println("k value is:"+k);
-	test();
-
-	MainClass1 m1 = new MainClass1();
-	System.out.println("d value is:"+m1.d);
-	m1.display();
+		System.out.println("MAIN METHOD");
+		System.out.println("K value is: "+Central1.k);
 	}
 
+	static
+	{
+		System.out.println("STATIC BLOCK OF MAIN CLASS");
+	}
 }
